@@ -1,7 +1,8 @@
 
 *{
-     border:1px solid red;
+ border: solid red;
 }
+
 body{
      font-family: 'Montserrat', sans-serif;
   
@@ -21,41 +22,80 @@ left : 500px ;
 top : 50px ;
 }
 
+
 main{
-     padding: 30px;
-}
-.ls{
-     margin: 5px;
+     
+     margin: 15px;
+     padding: 20px;
+   
+
+ 
+    
+    
+     
+
 }
 
-.ingreso{
-    
-    text-align:center;
-     display: block;
-    width: 450px;
-    height: 450px;
+.ll{
+     width: 940px;
+
 }
-.recomendacion{
-     border: 10px;
+.parte-ingreso{
+   
+     border: 1px solid rgb(75, 65, 220);
+     margin: 1em;
      padding: 10px;
-     display: block;
+     display: inline-block;
+    
+  
+     
+
 }
-.section-encrip{
-     position: absolute;
-     top: 350px;
-     right: 300px;
+
+.caja-ingreso{
+     border: 1px solid goldenrod;
+     width: 400px;
+     height: 500px;
+     text-align: center;
+     padding: 10px;
+}
+.caja-ingreso .ingreso{
+     width: 380px;
+     height: 400px;
+}
+
+
+
+
+.parte-salidad{
+
+     
+
+     border: 1px solid green;
+     margin: 1em;
+     padding: 10px;
+     float: right;
+   
+
+}
+.caja-salidad{
+
+     border: 1px solid goldenrod;
      width: 300px;
      height: 500px;
-  
+     text-align: center;
+     border-radius: 15px;
+ 
+}
+.text-input-salida{
+   
+    border: none;
+     height: 370px;
+     width: auto;
+     
+}
+.boton-2{
+  margin: 1em;
+}
 
 
-}
-.section-encrip +.btn{
-     display: block;
-}
-.btn{
-     font-style: bold;
-     background-color: crimson;
-     border-radius: 8px;
-     padding: 10px;
-}
