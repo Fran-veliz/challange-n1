@@ -1,0 +1,61 @@
+
+*{
+     border:1px solid red;
+}
+body{
+     font-family: 'Montserrat', sans-serif;
+  
+}
+
+
+.logo{
+     padding: 3em;
+     width: 190px;
+}
+
+.titulo{
+
+position: absolute;
+width : 400px ;
+left : 500px ;
+top : 50px ;
+}
+
+main{
+     padding: 30px;
+}
+.ls{
+     margin: 5px;
+}
+
+.ingreso{
+    
+    text-align:center;
+     display: block;
+    width: 450px;
+    height: 450px;
+}
+.recomendacion{
+     border: 10px;
+     padding: 10px;
+     display: block;
+}
+.section-encrip{
+     position: absolute;
+     top: 350px;
+     right: 300px;
+     width: 300px;
+     height: 500px;
+  
+
+
+}
+.section-encrip +.btn{
+     display: block;
+}
+.btn{
+     font-style: bold;
+     background-color: crimson;
+     border-radius: 8px;
+     padding: 10px;
+}
