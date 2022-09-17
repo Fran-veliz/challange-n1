@@ -1,101 +1,143 @@
-
 *{
- border: solid red;
+
 }
 
-body{
-     font-family: 'Montserrat', sans-serif;
-  
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    background: #ecf3f3;
 }
 
-
+header{
+ position: relative;
+    padding: 15px;
+}
 .logo{
-     padding: 3em;
-     width: 190px;
+    display: inline-block;
+   max-width: 200px;
 }
-
-.titulo{
-
-position: absolute;
-width : 400px ;
-left : 500px ;
-top : 50px ;
+.letras{
+    max-width: 600px;
 }
-
-
 main{
-     
-     margin: 15px;
-     padding: 20px;
-   
-
- 
-    
-    
-     
-
+    padding: 20px;
 }
-
-.ll{
-     width: 940px;
-
-}
+/*------------------------------*/
 .parte-ingreso{
-   
-     border: 1px solid rgb(75, 65, 220);
-     margin: 1em;
-     padding: 10px;
-     display: inline-block;
+
+display: inline-block;
+margin: 2em;
+}
+
+.ingreso{
+    width: 350px;
+    height: 400px;
+    border: none;
+    outline: none;
+    padding: 3em;
+    background: #ecf3f3;
     
-  
-     
-
-}
-
-.caja-ingreso{
-     border: 1px solid goldenrod;
-     width: 400px;
-     height: 500px;
-     text-align: center;
-     padding: 10px;
-}
-.caja-ingreso .ingreso{
-     width: 380px;
-     height: 400px;
 }
 
 
+.ingreso::placeholder{
+   padding: 15px;
+}
+.recomendacion{
+    padding: 1em;
+    display: block;
+}
+
+/*------------------------------*/
 
 
 .parte-salidad{
+   border-radius: 20px;
+   width: 200px;
+   background-image: url(imagenes/monte.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position-y: bottom;
+   position:absolute;
+   left: 580px;
+   top: 210px;
+  width: 350px;
+height: 500px;
+padding:0 2em;
+cursor: pointer;
 
-     
+box-shadow: 12px 15px 25px 0px #726D87;;
 
-     border: 1px solid green;
-     margin: 1em;
-     padding: 10px;
-     float: right;
-   
 
-}
-.caja-salidad{
-
-     border: 1px solid goldenrod;
-     width: 300px;
-     height: 500px;
-     text-align: center;
-     border-radius: 15px;
- 
 }
 .text-input-salida{
-   
+
+    width: 340px;
+    height: 340px;
     border: none;
-     height: 370px;
-     width: auto;
-     
+    background: rgba(0, 0, 0, 0.0);
+    tab-size: 40px;
+    outline: none;
+    cursor: pointer;
+    text-align: top;
 }
-.boton-2{
-  margin: 1em;
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+.btn{
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    background-color:rgb(91, 161, 83);
+    padding: 10px 20px;
+    box-shadow: 10px 10px 30px 0px #726D87;
+    text-decoration: solid;
+    cursor: pointer;
+    transition: 600ms;
+    outline:none;
+    color: aliceblue;
+}
+.btn:hover{
+
+    background-color: rgb(106, 224, 127);
 }
 
+@media  screen and (max-width: 600px){
 
+    *{
+       
+    }
+   .letras{
+    max-width:300px;
+    position: relative;
+    left: 50px;
+   }
+   .logo{
+    display: flex;
+    max-width: 150px;
+    text-align: center;
+    position: relative;
+    left: 120px;
+    border-radius: 20px;
+    box-shadow: 12px 15px 25px 0px #726D87;;
+   }
+main{
+    padding: 0px;
+    margin: 0px;
+}
+.ingreso{
+  
+    display: block;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 12px 15px 25px 0px #726D87;;
+}
+.parte-salidad{
+    position: relative;
+    left: 19px;
+    bottom: 20px;
+    width: 330px;
+
+}
+    
+}

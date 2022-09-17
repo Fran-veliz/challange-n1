@@ -5,91 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mukta:wght@200&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    >
+
+
 </head>
 
 <body>
     <header>
-        <img class="logo" src="imagenes/cpu.png" alt="logo-site">
-        <h1 class="titulo">código secreto</h1>
+        <img class="logo" src="imagenes/logo.png" alt="logo_encriptador">
 
-    </header>
-
-    <main>
-         <div class="ll">
-       
-              <section class="parte-ingreso">
-
-                <div class="caja-ingreso">
-
-                    <input class="ingreso" type="text" name="input-texto" id="input-texto"
-                        placeholder="Ingrese el texto aqui">
-                    <label class="recomendacion" for="input-texto"> Solo letras minúsculas, sin acento </label>
-
-                    <div class="botones">
-                        <input class="btn" type="button" value="encriptar!" id="btn-encriptar">
-                        <input class="btn" type="button" value="desencriptar!" id="btn-desencriptar">
-                    </div>
+        <img class="letras" src="imagenes/titulo.blanco.png" alt="">
 
 
+        <main>
+
+
+
+            <section class="parte-ingreso">
+                <textarea class="ingreso" type="text" name="input-texto" id="input-texto"
+                    placeholder="ingrese su texto aqui"></textarea>
+                <label class="recomendacion" for="input-texto"> Solo letras minúsculas, sin acento </label>
+                <div class="botones">
+                    <input class="btn" type="button" value="encriptar!" id="btn-encriptar">
+                    <input class="btn" type="button" value="desencriptar!" id="btn-desencriptar">
                 </div>
 
-                </section>
-
-
-                <section class="parte-salidad">
-
-                    <div class="caja-salidad">
-                        <h2 id="">Mensaje encriptado:</h2>
-                        <input class="text-input-salida" type="text" id="msg">
-    
-                        <div class="boton-2">
-                            <input class="btn" type="button" value="copiar" id="btn-copy">
-                        </div>
-    
-                    </div>
-                    
             </section>
-        </div>
+            <section class="parte-salidad">
+                <h2 class="titulo2">Mensaje encriptado:</h2>
+                <input class="text-input-salida" type="text" id="msg">
 
+                <input class="btn" type="button" value="copiar" id="btn-copy">
 
-            
-            
-            
-
-
-
-
-
-        <script>
-
-
-            function encriptar() {
-                var texto = document.querySelector("#input-texto").value;
-                var textoCifrado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
-
-                document.querySelector(".text-input-salida").value = textoCifrado;
-                document.querySelector("#input-texto").value;
-            }
+            </section>
 
 
 
-            var boton1 = document.querySelector("#btn-encriptar"); boton1.onclick = encriptar;
 
-            function desencriptar() {
-                var texto = document.querySelector("#input-texto").value; var textoCifrado = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u"); document.querySelector(".text-input-salida").value = textoCifrado; document.querySelector("#input-texto").value;
 
-            }
 
-            var boton2 = document.querySelector("#btn-desencriptar"); boton2.onclick = desencriptar;
-        </script>
-    </main>
+
+
+
+
+            <script>
+
+
+                function encriptar() {
+                    var texto = document.querySelector("#input-texto").value;
+                    var textoCifrado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+
+                    document.querySelector(".text-input-salida").value = textoCifrado;
+                    document.querySelector("#input-texto").value;
+                }
+
+                function copy() {
+
+                    var resultado = document.getElementById("msg").select();
+                    document.execCommand('copy');
+                    alert("copiado");
+                }
+
+
+                function desencriptar() {
+                    var texto = document.querySelector("#input-texto").value; var textoCifrado = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u"); document.querySelector(".text-input-salida").value = textoCifrado; document.querySelector("#input-texto").value;
+
+                }
+                
+                var boton1 = document.querySelector("#btn-encriptar"); boton1.onclick = encriptar;
+                var boton2 = document.querySelector("#btn-desencriptar"); boton2.onclick = desencriptar;
+                var boton3 = document.querySelector("#btn-copy"); boton3.onclick = copy;
+            </script>
+
+        </main>
 
 
 
